@@ -1,0 +1,118 @@
+*{
+	text-decoration: none;
+	list-style-type: none;
+	font-family: 'Open Sans', sans-serif;
+}
+body{
+	background-color: #2D2735;
+}
+/*Menú*/
+header{
+	background-color: #1C1821;
+}
+header img{
+	width: 200px;
+}
+header nav {
+	display: inline;
+	padding: 2.5%;
+	float: right;
+}
+header nav a{
+	color: white;
+	font-style: italic; 
+	padding: 6px 15px;
+	font-size: 0.9em;
+}
+header nav a:hover{
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+}
+/*end---*/
+
+/*Flores - Sections*/
+.flor{
+	background-image: url("../image/header-image.jpg");
+	background-size: cover;
+	margin: 2%;
+	background-position: top;
+	padding-top: 9%;
+	padding-bottom: 12%;
+}
+.opaco{
+	background-color: #1C1821;
+	width: 55%;
+	text-align: center;
+	margin: auto;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+.opaco h1{
+	font-family: 'Courgette', cursive;
+	font-size: 4em;
+	color: #F7BA6A;
+	margin-bottom: 4%;
+}
+.opaco p{
+	color: white;
+	font-size: 0.8em;
+	font-style: italic;
+}
+.opaco p span{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.flower{
+	width: 100%;
+}
+.black{
+	background-color: #1C1821;
+	margin: 4% 0% 6%;
+}
+.black h4{
+	text-align: center;
+	font-family: 'Courgette', cursive;
+	color: #F7BA6A;
+	padding: 4% 0% 1%;
+}
+.black p{
+	text-align: center;
+	color: white;
+	font-size: 0.9em;
+	font-style: italic;
+	padding: 1% 0% 3%;
+}
+p.texto{
+	font-style: normal;
+	text-align: justify;
+	padding-right: 2%;
+	padding-left: 2%;
+	font-size: 0.9em;
+}
+video{
+	width: 100%;
+}
+.caja{
+	background-color: #1C1821;
+	padding: 5%;
+	border-radius: 5px;
+	margin-top: 6%;
+}
+input{
+	background-color: #2D2735;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	padding: 3% 5%;
+}
+
+/* Responsive */
+
+@media screen and (max-width : 920px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
