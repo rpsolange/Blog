@@ -7,65 +7,90 @@ body{
 	background-color: #2D2735;
 }
 /*Menú*/
-
-/*
+header img{
+	width: 175px;
+}
 header{
 	background-color: #1C1821;
 	color: white;
+	top: 0;
+	right: 0;
+	left: 0;
+	position: fixed;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+header .barra{
+	display: flex;
+	float: right;
+	margin-top: 1.5%;
 }
 #btn-menu{
 	display: none;
 }
 header label{
 	display: none;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
 	cursor: pointer;
 }
-header img{
-	width: 200px;
+.menu ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
-header .menu {
-	display: inline;
-	padding: 2.5%;
-	float: right;
-}
-header nav a{
+.menu li a {
+	display: block;
+	padding: 6px 16px;
+	font-style: italic;
 	color: white;
-	font-style: italic; 
-	padding: 6px 15px;
 	font-size: 0.9em;
 }
-header nav a:hover{
-	color: black;
-	background-color: white;
-	border-radius: 5px;
+header .menu a:hover{
+	background-color: rgba(256, 256, 256, 0.2);
 }
 
-@media screen and (max-width : 760px) {
+/*Menú Responsive*/
+@media screen and (max-width : 920px) {
+	header{
+		padding: 0%;
+	}
 	header label{
 		display: block;
-		float: right;
 	}
 	.menu{
 		position: absolute;
-		left: 0;
-		display: flex;
-		flex-direction: column;
-		width: 50%;
+		top: 58px;
+		right: 0;
 		background-color: #1C1821;
-		transition: all 0.4s;
-		transform: translateX(-100%);
-	}
-	#btn-menu:checked - .menu{
+		width: 30%;
 		transform: translateX(100%);
+		transition: all 0.6s;
 	}
-} 
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu li a{
+		font-style: normal;
+	}
+	.menu li{
+		text-align: center;
+	}
+	header .menu a:hover{
+		padding: 10px;
+	}
+	#btn-menu:checked ~ .menu{
+		transform: translateX(0%);
+	}
+}
 /*end---*/
 
 /*Flores - Sections*/
 .flor{
 	background-image: url("../image/header-image.jpg");
 	background-size: cover;
-	margin: 2%;
+	margin: 8% 0% 2%;
 	background-position: top;
 	padding-top: 9%;
 	padding-bottom: 12%;
@@ -151,6 +176,16 @@ p.texto{
 }
 .social i{
 	margin-top: 10px;
+}
+
+/*Sections Responsive*/
+@media screen and (max-width : 920px) {
+	.flor{
+		margin: 8% 0% 2%;
+		background-position: center;
+		padding-top: 9%;
+		padding-bottom: 12%;
+	}
 }
 /*end---*/
 
