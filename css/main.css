@@ -7,13 +7,23 @@ body{
 	background-color: #2D2735;
 }
 /*Menú*/
+
+/*
 header{
 	background-color: #1C1821;
+	color: white;
+}
+#btn-menu{
+	display: none;
+}
+header label{
+	display: none;
+	cursor: pointer;
 }
 header img{
 	width: 200px;
 }
-header nav {
+header .menu {
 	display: inline;
 	padding: 2.5%;
 	float: right;
@@ -29,6 +39,26 @@ header nav a:hover{
 	background-color: white;
 	border-radius: 5px;
 }
+
+@media screen and (max-width : 760px) {
+	header label{
+		display: block;
+		float: right;
+	}
+	.menu{
+		position: absolute;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		background-color: #1C1821;
+		transition: all 0.4s;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked - .menu{
+		transform: translateX(100%);
+	}
+} 
 /*end---*/
 
 /*Flores - Sections*/
@@ -86,12 +116,9 @@ header nav a:hover{
 p.texto{
 	font-style: normal;
 	text-align: justify;
-	padding-right: 2%;
-	padding-left: 2%;
+	padding-right: 3%;
+	padding-left: 3%;
 	font-size: 0.9em;
-}
-video{
-	width: 100%;
 }
 .caja{
 	background-color: #1C1821;
@@ -99,12 +126,41 @@ video{
 	border-radius: 5px;
 	margin-top: 6%;
 }
-input{
+.col-5 input{
 	background-color: #2D2735;
 	border: none;
 	border-radius: 5px;
 	width: 100%;
 	padding: 3% 5%;
+}
+.social{
+	margin-left: 4%;
+}
+.social a:hover{
+	color: black;
+}
+.social a{
+	display: inline-block;
+    background: #2D2735;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    margin: 10px 5px ;
+}
+.social i{
+	margin-top: 10px;
+}
+/*end---*/
+
+/*Footer*/
+footer{
+	text-align: center;
+	color: white;
+	background-color: #1C1821;
+	padding: 2%;
+	font-size: 0.8em;
 }
 
 /* Responsive */
