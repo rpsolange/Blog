@@ -181,10 +181,21 @@ p.texto{
 /*Sections Responsive*/
 @media screen and (max-width : 920px) {
 	.flor{
-		margin: 8% 0% 2%;
+		margin: 10% 0% 2%;
 		background-position: center;
-		padding-top: 9%;
-		padding-bottom: 12%;
+		padding-top: 8%;
+		padding-bottom: 10%;
+	}
+	.opaco{
+		width: 40%;
+		padding-top: 6%;
+		padding-bottom: 6%;
+	}
+	.row .col-7{
+		width: 100%;
+	}
+	.row .col-5{
+		width: 100%;
 	}
 }
 /*end---*/
@@ -201,7 +212,9 @@ footer{
 /* Responsive */
 
 @media screen and (max-width : 920px) {
-
+	footer{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 600px) {

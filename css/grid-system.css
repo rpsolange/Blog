@@ -21,6 +21,16 @@
 	padding-right: 14px;
 	margin: 0px auto;
 }
+@media (max-width: 920px){
+	.container{
+		width: 890px;
+	}
+} 
+@media (max-width: 600px){
+	.container{
+		width: 570px;
+	}
+}
 
 .row {
 	margin-left: -14px;
