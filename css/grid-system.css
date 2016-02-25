@@ -23,12 +23,12 @@
 }
 @media (max-width: 920px){
 	.container{
-		width: 890px;
+		width: 100%;
 	}
 } 
 @media (max-width: 600px){
 	.container{
-		width: 570px;
+		width: 100%;
 	}
 }
 

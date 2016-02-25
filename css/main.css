@@ -21,7 +21,6 @@ header{
 	padding-right: 15%;
 }
 header .barra{
-	display: flex;
 	float: right;
 	margin-top: 1.5%;
 }
@@ -34,6 +33,9 @@ header label{
 	width: 50px;
 	text-align: center;
 	cursor: pointer;
+	border-radius: 5px;
+	margin-right: 5px;
+	border: 1px solid rgba(256, 256, 256, 0.2);
 }
 .menu ul{
 	margin: 0;
@@ -64,7 +66,7 @@ header .menu a:hover{
 		top: 58px;
 		right: 0;
 		background-color: #1C1821;
-		width: 30%;
+		width: 50%;
 		transform: translateX(100%);
 		transition: all 0.6s;
 	}
@@ -84,7 +86,7 @@ header .menu a:hover{
 		transform: translateX(0%);
 	}
 }
-/*end---*/
+/* -- end --*/
 
 /*Flores - Sections*/
 .flor{
@@ -157,6 +159,7 @@ p.texto{
 	border-radius: 5px;
 	width: 100%;
 	padding: 3% 5%;
+	color: white;
 }
 .social{
 	margin-left: 4%;
@@ -179,23 +182,36 @@ p.texto{
 }
 
 /*Sections Responsive*/
-@media screen and (max-width : 920px) {
+@media screen and (max-width: 600px) {
 	.flor{
-		margin: 10% 0% 2%;
-		background-position: center;
-		padding-top: 8%;
-		padding-bottom: 10%;
+		margin: 16% 3.2% 6%;
+		padding-top: 5%;
+		padding-bottom: 4%;
 	}
 	.opaco{
-		width: 40%;
-		padding-top: 6%;
-		padding-bottom: 6%;
+		width: 80%;
+		padding: 6% ;
+	}
+	.row .col-4{
+		width: 100%;
+		padding: 0% 5%;
+	}
+	.row .col-5{
+		display: none;
+	}
+	.row .col-4 .black{
+		margin:0;
 	}
 	.row .col-7{
 		width: 100%;
+		padding: 0% 5%;
 	}
-	.row .col-5{
-		width: 100%;
+	.row .col-7 .black{
+		margin-top: 10%;
+		margin-bottom: 8%;
+	}
+	p.texto{
+		font-size: 1em;
 	}
 }
 /*end---*/
@@ -209,14 +225,19 @@ footer{
 	font-size: 0.8em;
 }
 
-/* Responsive */
-
+/* Footer - Responsive */
 @media screen and (max-width : 920px) {
 	footer{
 		width: 100%;
+		font-size: 1em;
+		padding: 3%;
 	}
 }
 
 @media screen and (max-width: 600px) {
-
+	footer{
+		padding: 7%;
+	}
 }
+
+/* -- Final -- */
